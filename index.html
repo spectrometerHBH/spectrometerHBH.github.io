@@ -1,0 +1,253 @@
+<!--stolen from Jiaheng Zhang-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+  <style type="text/css">
+    #sectiontohide {
+      padding: 20px;
+      background: #f0f0f0;
+      width: 400px;
+    }
+  </style>
+  <script type="text/javascript">
+    function toggle_div_fun(id) {
+
+      var divelement = document.getElementById(id);
+
+      if (divelement.style.display == 'none')
+        divelement.style.display = 'block';
+      else
+        divelement.style.display = 'none';
+    }
+  </script>
+  <link rel="icon" type="image/png" href="pictures/stanford.png">
+  <title>Bohan Hou</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Bohan Hou</name>
+              </p>
+              <p>
+                I am a third-year Ph.D. student in Computer Science at Carnegie Mellon University, where I am very fortunate to be advised by <a href="https://tqchen.com/">Prof. Tianqi Chen</a>. I am a member of <a href="https://catalyst.cs.cmu.edu/">Catalyst</a>.   
+              </p>
+              <p>
+                My research interests lie in machine learning systems and deep learning compilers.
+              </p>
+              <p>
+                Prior to coming to CMU, I received my Bachelor's degree in <a
+                  href="https://acm.sjtu.edu.cn/home">ACM Honors Class of Shanghai Jiao Tong University</a>, where I worked under the supervision of <a href="https://wnzhang.net/">Prof. Weinan Zhang</a> and <a href="https://apex.sjtu.edu.cn/members/yyu">Prof. Yong Yu</a>.
+              </p>
+              <!--<p>
+                I will be a research intern in <a
+                  href="https://libra.org/en-US/">Calibra Team at Facebook</a>, working with <a
+                  href="https://paymanmohassel.com/">Payman Mohassel</a> and <a
+                  href="https://scholar.google.com/citations?user=i-gjS3UAAAAJ&hl=en">Kostas Chalkias</a> in 2021. 
+              </p>-->
+              <!--
+              <p align=center>
+                <a href="mailto:jiaheng_zhang@berkeley.edu"> Email </a> /
+                <a href="https://scholar.google.com/citations?hl=en&user=vh90--IAAAAJ"> Google Scholar </a> /
+                <a href="https://www.linkedin.com/in/jiaheng-zhang-b21953149/"> LinkedIn </a>/
+                <a href="https://twitter.com/jiahengzhang96"> 
+                Twitter </a>/
+                <a href="https://weibo.com/5967754881/profile?rightmod=1&wvr=6&mod=personinfo"> 
+                Weibo </a>
+              </p>
+            -->
+            </td>
+            <td width="33%">
+              
+      <img src="IMG_4705.jpg" alt="Simply Easy Learning" 
+         height="300">
+         <figcaption>Photo shot with <a href="https://www.dengwxn.com/">Weixin Deng</a> (right) at UW campus</figcaption>
+            
+            </td>
+          </tr>
+          </table>
+
+        <!--Projects ================================================== -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Projects</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="97%" align="center" border="0" cellspacing="0" cellpadding="10"> 
+          <tr>
+            <td>
+              <p>
+                <papertitle>MLC-LLM: Machine Learning Compilation for Large Language Models
+                  <a href="https://github.com/mlc-ai/mlc-llm">[repo] </a>
+                </papertitle>
+                <br>
+                MLC-LLM is a universal solution that allows any language models to be deployed natively on a diverse set of hardware backends and native applications, plus a productive framework for everyone to further optimize model performance for their own use cases.
+                <br>
+            </td>
+          </tr>
+        </table>
+
+        <!--Publications ================================================== -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Research (*indicates equal contribution)</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="97%" align="center" border="0" cellspacing="0" cellpadding="10"> 
+          <tr>
+            <td>
+              <p>
+                <papertitle>Optimal Kernel Orchestration for Tensor Programs with Korch
+                  <a href="https://dl.acm.org/doi/pdf/10.1145/3620666.3651383">[pdf] </a>
+                </papertitle>
+                <br>
+                Muyan Hu*, Ashwin Venkatram*, Shreyashri Biswas*, Balamurugan Marimuthu*, <u><strong>Bohan Hou</strong></u>, Gabriele Oliaro, Haojie Wang, Liyan Zheng, Xupeng Miao, Jidong Zhai, Zhihao Jia
+                <br>
+                <em>The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '24)</em>
+                <br>
+            </td>
+          </tr>
+        </table>
+        <table width="97%" align="center" border="0" cellspacing="0" cellpadding="10"> 
+          <tr>
+            <td>
+              <p>
+                <papertitle>Relax: Composable Abstractions for End-to-End Dynamic Machine Learning
+                  <a href="https://arxiv.org/pdf/2311.02103.pdf">[pdf] </a>
+                </papertitle>
+                <br>
+                Ruihang Lai*, Junru Shao*, Siyuan Feng*, Steven S Lyubomirsky*, <u><strong>Bohan Hou</strong></u>, Wuwei Lin, Zihao Ye, Hongyi Jin, Yuchen Jin, Jiawei Liu, Lesheng Jin, Yaxing Cai, Ziheng Jiang, Yong Wu, Sunghyun Park, Prakalp Srivastava, Jared G Roesch, Todd C Mowry, Tianqi Chen
+                <br>
+            </td>
+          </tr>
+        </table>
+        <table width="97%" align="center" border="0" cellspacing="0" cellpadding="10"> 
+          <tr>
+            <td>
+              <p>
+                <papertitle>TensorIR: An Abstraction for Automatic Tensorized Program Optimization
+                  <a href="https://arxiv.org/abs/2207.04296">[pdf] </a>
+                </papertitle>
+                <br>
+                Siyuan Feng*, <u><strong>Bohan Hou</strong></u>, Hongyi Jin, Wuwei Lin, Junru Shao, Ruihang Lai, Zihao Ye, Lianmin Zheng, Cody Hao Yu, Yong Yu, and Tianqi Chen
+                <br>
+                <em>The 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS '23)</em>
+                <br>
+            </td>
+          </tr>
+        </table>
+        <table width="97%" align="center" border="0" cellspacing="0" cellpadding="10">
+          <tr>
+            <td>
+              <p>
+                <papertitle>Tensor Program Optimization with Probabilistic Programs
+                    <a href="https://arxiv.org/abs/2205.13603">[pdf] </a>
+                </papertitle>
+                <br>
+                Junru Shao, Xiyou Zhou, Siyuan Feng, <u><strong>Bohan Hou</strong></u>, Ruihang Lai, Hongyi Jin, Wuwei Lin, Masahiro Masuda, Cody Hao Yu, Tianqi Chen
+                <br>
+                <em>Thirty-sixth Conference on Neural Information Processing Systems (NeurIPS), 2022</em>
+                <br>
+              </td>
+          </tr>
+        </table>
+        <!-- Footer ================================================== -->
+        <hr>
+
+        <footer class="footer">
+          <div class="container">
+            <p align=right>
+              <a href="https://jonbarron.info/"> Page Template </a>
+            </p>
+          </div>
+        </footer>
+
+      </td>
+    </tr>
+</body>
+
+</html>
