@@ -74,6 +74,34 @@
     span.highlight {
       background-color: #ffffd0;
     }
+
+    .education-experience {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 32px;
+      padding: 20px;
+    }
+
+    .education-experience h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0 0 20px;
+    }
+
+    .education-experience p {
+      line-height: 1.6;
+      margin: 0 0 20px;
+    }
+
+    .education-experience p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      .education-experience {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
   </style>
   <style type="text/css">
     #sectiontohide {
@@ -151,49 +179,51 @@
           </tr>
           </table>
 
-        <!--Industry Experience ====================================== -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td>
-              <heading>Experience</heading>
-            </td>
-          </tr>
-        </table>
-        <table width="97%" align="center" border="0" cellspacing="0" cellpadding="10">
-          <tr>
-            <td>
+        <!--Education and Experience ================================= -->
+        <div class="education-experience">
+          <div>
+            <h2>Education</h2>
+            <p>
+              <strong>Carnegie Mellon University</strong><br>
+              Ph.D. in Computer Science<br>
+              <em>Sept. 2021 &ndash; Jan. 2027</em><br>
+              Advised by <a href="https://tqchen.com/">Prof. Tianqi Chen</a>
+            </p>
+            <p>
+              <strong>Shanghai Jiao Tong University</strong><br>
+              Bachelor's degree in Computer Science<br>
+              <em>Sept. 2017 &ndash; Jun. 2021</em><br>
+              ACM Honors Class
+            </p>
+          </div>
+          <div>
+            <h2>Experience</h2>
               <p>
-                <papertitle>NVIDIA &mdash; AI Compiler Engineering Intern</papertitle>
+                <strong>NVIDIA</strong><br>
+                AI Compiler Engineering Intern
                 <br>
                 <em>Aug. 2026 &ndash; Present</em>
                 <br>
                 Pittsburgh, PA, USA &middot; Remote
               </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
               <p>
-                <papertitle>Meta &mdash; Research Scientist Intern</papertitle>
+                <strong>Meta</strong><br>
+                Research Scientist Intern
                 <br>
                 <em>May 2023 &ndash; Aug. 2023</em>
                 <br>
                 Menlo Park, CA, USA &middot; On-site
               </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
               <p>
-                <papertitle>OctoML &mdash; Machine Learning Systems Engineering Intern</papertitle>
+                <strong>OctoML</strong><br>
+                Machine Learning Systems Engineering Intern
                 <br>
                 <em>May 2022 &ndash; Aug. 2022</em>
                 <br>
                 Pittsburgh, PA, USA &middot; Remote
               </p>
-            </td>
-          </tr>
-        </table>
+          </div>
+        </div>
 
         <!--Projects ================================================== -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
